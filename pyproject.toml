@@ -8,6 +8,7 @@ authors = [
 readme = "README.md"
 requires-python = ">=3.12"
 dependencies = [
+    "sqlalchemy (>=2.0.39,<3.0.0)"
 ]
 
 [tool.poetry]
@@ -18,6 +19,10 @@ packages = [{include = "otus_hw6", from = "src"}]
 ruff = "^0.11.0"
 pytest = "^8.3.5"
 pytest-cov = "^6.0.0"
+
+[tool.ruff]
+# Allow lines to be as long as 79.
+line-length = 79
 
 [build-system]
 requires = ["poetry-core>=2.0.0,<3.0.0"]
